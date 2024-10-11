@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practico de Diseño Web</title>
+
+
+    <!---CSS  -->
+    <style>
+        body{
+            background-color: #f8f8f8;
+        }
+        caption{
+            border: 1px solid black;
+            border-bottom: 0;
+            background-color: #007bff;
+        }
+        table{
+            
+            border-collapse: collapse;
+        }
+        table td{
+            
+            text-align: center;
+            border: 1px solid  black;
+            padding: 4px;
+        }
+        
+        
+        button:hover{
+            background-color: #218838;
+        }
+        button{
+            
+            border-radius: 4px;
+            background-color: #28a745;
+        }
+        
+
+       
+    </style>
+
+</head>
+
+<body>
+    
+
+    <!---HTML  -->
+
+    <p></p>
+    <table><!--para pone titulo a la tabla-->
+        <caption>Datos de su mascota</caption>
+        
+    <tr>
+        <td>Nombre:</td>
+        <td> <input type="text" id="hola1" required autofocus></td>
+    </tr>    
+    <tr>
+        <td>Dirección:</td>
+        <td><input type="text" name="hola2" id="hola2" required autofocus></td>
+    </tr>  
+    <tr>
+        <!-- si escribes c en vscode podes comentar mas facil :D -->
+        <td>Raza:</td>
+        <td><select name="hola3" id="hola3">
+            <option value="">canichi</option>
+            <option value="">Viltrumita</option>
+            <option value="">kriptoniano</option>
+            <option value="">sayajin</option>
+            <option value="">topo negro >:C</option>
+        </select></td>
+    </tr>  
+    <tr>
+        <td>Sexo:</td>
+        <td><select name="hola3" id="hola3">
+            <option value="">Macho</option>
+            <option value="">hembra</option>
+            <option value="">los dos</option>
+            <option value="">SI :D</option>
+        </select></td>
+    </tr>  
+    <tr>
+        <td>Vacunas:</td>
+        <td><select name="hola3" id="hola3">
+            <option value="">Si</option>
+            <option value="">No</option>
+            <option value="">Nose XD</option>
+        </select></td>
+    </tr> 
+    <tr>
+        <td><button>Limpiar</button></td>
+        <td class="Datos"><button>Guardar datos</button> </td>
+        
+
+        
+    </tr>   
+    </table>
+</body>
+</html>

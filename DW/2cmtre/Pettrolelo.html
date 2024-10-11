@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practico de Diseño Web</title>
+
+
+    <!---CSS  -->
+    <style>
+        body{
+            background-color:papayawhip;
+            font-size: 109%;
+           
+            
+        }
+        h1{
+          
+            color: antiquewhite;
+        }
+        label{
+           font-weight:bold; 
+        }
+        caption{
+            border: 1px solid black;
+            border-bottom: 0;
+            background-color: #007bff;
+        }
+        table{
+           margin: 0 auto;
+            background-color: aliceblue;
+            border-collapse: collapse;
+        }
+        table td{
+            
+            text-align: center;
+            border: 1px solid  black;
+            padding: 4px;
+        }
+        
+        
+        button:hover{
+            background-color: #218838;
+        }
+        button{
+            
+            border-radius: 4px;
+            background-color: #28a745;
+        }
+        .gris:hover{
+            border: 1px solid black;
+        }
+        .gris{
+            
+            font-size: 120%;
+            border-radius: 20px;
+            background-color: rgb(202, 202, 202);
+            border: 1px  solid rgb(202, 202, 202);
+            width: 100%;
+            padding: 5px 10px 5px 10px;
+        }
+        .XD{
+            margin: 0 auto;
+        }
+        
+       
+    </style>
+
+</head>
+
+<body>
+    
+
+    <!---HTML  -->
+<!-- el form envia todo lo que haya dentro para otra pagina (php), con los metodos son la forma de enviar (seguridad) -->
+    <form action="" method="post">
+    <table><!--para pone titulo a la tabla-->
+        <caption>Datos de su mascota ♨_♨</caption>
+        
+    <tr>
+        <td>Nombre:</td>
+        <td> <input type="text" id="hola1" required autofocus></td>
+    </tr>    
+    <tr>
+        <td>Dirección:</td>
+        <td><input type="text" name="hola2" id="hola2" required autofocus></td>
+    </tr>  
+    <tr>
+        <!-- si escribes c en vscode podes comentar mas facil :D -->
+        <td>Raza:</td>
+        <td><select name="hola3" id="hola3">
+            <option value="">Canichi</option>
+            <option value="">Viltrumita</option>
+            <option value="">Kriptoniano</option>
+            <option value="">Sayajin</option>
+            <option value="">Topo negro >:C</option>
+        </select></td>
+    </tr>  
+    <tr>
+        <td>Sexo:</td>
+        <td><input type="radio" name="hola3" id="hembra" value="h">
+            <label for="hembra">Hembra</label>
+            <input type="radio" name="hola3" id="ma" value="m">
+            <label for="ma">Macho</label>
+            <!-- el for y el id tiene q coincidir -->
+            <input type="radio" name="hola3" id="croissant"value="c">
+            <label for="croissant">Croissant</label>
+            <input type="radio" name="hola3" id="si" value="si" >
+            <label for="si">SI \(￣︶￣*\)</label>
+
+
+ 
+
+
+        </td>
+    </tr>  
+    <tr>
+        <td>Vacunas:</td>
+        <td><input type="checkbox" name="hola4" id="rabioso" value="R">
+        <label for="rabioso">Rabia</label>
+        <input type="checkbox" name="hola4" id="nino" value="N">
+        <label for="nino">De Chiquito</label>
+        <input type="checkbox" name="hola4" id="para" value="S">
+        <label for="para">Parasitos</label>
+        <input type="checkbox" name="hola4" id="T" value="T">
+        <label for="T">Virus T</label>
+        <input type="checkbox" name="hola4" id="corona" value="C">
+        <label for="corona">Corona(Cerveza)</label>
+        
+        </td>
+    </tr> 
+    <tr>
+        <!-- ultimo tr -->
+        <td><input type="reset" value="Limpar" class="gris"></td>
+        <td><input type="submit" class="sumbit"></td>
+        
+
+        
+    </tr>   
+    </table>
+    <button role="button" class="XD">Validar</button>
+</form> 
+   
+</body>
+</html>
